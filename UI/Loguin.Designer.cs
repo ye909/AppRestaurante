@@ -168,10 +168,10 @@
             // txtMensaje
             // 
             this.txtMensaje.AutoSize = true;
-            this.txtMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMensaje.Location = new System.Drawing.Point(740, 374);
             this.txtMensaje.Name = "txtMensaje";
-            this.txtMensaje.Size = new System.Drawing.Size(66, 16);
+            this.txtMensaje.Size = new System.Drawing.Size(71, 18);
             this.txtMensaje.TabIndex = 14;
             this.txtMensaje.Text = "Mensaje";
             this.txtMensaje.Visible = false;
