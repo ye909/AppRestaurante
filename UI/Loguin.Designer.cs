@@ -86,7 +86,7 @@
             this.btnInicioLoguin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicioLoguin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInicioLoguin.ForeColor = System.Drawing.Color.White;
-            this.btnInicioLoguin.Location = new System.Drawing.Point(677, 500);
+            this.btnInicioLoguin.Location = new System.Drawing.Point(682, 525);
             this.btnInicioLoguin.Name = "btnInicioLoguin";
             this.btnInicioLoguin.Size = new System.Drawing.Size(351, 43);
             this.btnInicioLoguin.TabIndex = 5;
@@ -147,7 +147,7 @@
             this.label5.AutoSize = true;
             this.label5.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(760, 412);
+            this.label5.Location = new System.Drawing.Point(757, 426);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(176, 18);
             this.label5.TabIndex = 12;
@@ -158,7 +158,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(728, 453);
+            this.label6.Location = new System.Drawing.Point(740, 467);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(219, 18);
             this.label6.TabIndex = 13;
@@ -168,10 +168,10 @@
             // txtMensaje
             // 
             this.txtMensaje.AutoSize = true;
-            this.txtMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMensaje.Location = new System.Drawing.Point(740, 374);
             this.txtMensaje.Name = "txtMensaje";
-            this.txtMensaje.Size = new System.Drawing.Size(71, 18);
+            this.txtMensaje.Size = new System.Drawing.Size(76, 20);
             this.txtMensaje.TabIndex = 14;
             this.txtMensaje.Text = "Mensaje";
             this.txtMensaje.Visible = false;

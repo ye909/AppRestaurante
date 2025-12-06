@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administracion\InfoReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\InfoReservas.Designer.cs">
+      <DependentUpon>InfoReservas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Administracion\MenuAdministrativo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     <Compile Include="RestableserContraseña.Designer.cs">
       <DependentUpon>RestableserContraseña.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Administracion\InfoReservas.resx">
+      <DependentUpon>InfoReservas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Contacto.resx">
       <DependentUpon>Contacto.cs</DependentUpon>
     </EmbeddedResource>

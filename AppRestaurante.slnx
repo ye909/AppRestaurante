@@ -1,6 +1,6 @@
 <Solution>
-  <Project Path="DAL/DAL.csproj" />
-  <Project Path="Entidades/Entidades.csproj" />
-  <Project Path="Negocio/Negocio.csproj" />
-  <Project Path="UI/UI.csproj" />
+  <Project Path="ConexionDAL/Conexion.csproj" Id="334679b2-11aa-4767-ab2f-6d5eedf57575" />
+  <Project Path="Entidades/Entidades.csproj" Id="4de9a220-fed5-4cfe-b227-a67619a065a7" />
+  <Project Path="Negocio/Negocio.csproj" Id="ba4ac2c3-5f17-425a-8b5b-92773e9488b7" />
+  <Project Path="UI/UI.csproj" Id="39c73cad-4023-4140-a776-b8587ac97b6d" />
 </Solution>

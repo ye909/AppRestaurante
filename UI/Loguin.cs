@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UI.Administracion;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace UI
 {
@@ -65,11 +66,26 @@ namespace UI
         {
            
             await Task.Delay(2600);
+            Entidades.Registro registroLoguin = new Entidades.Registro();
+            registroLoguin.Email = txtEmail.Text;
+            registroLoguin.Contraseña = txtContraseña.Text;
+
+           
+
+            Negocio.InfoRegistro infoRegistro = new Negocio.InfoRegistro();
+            infoRegistro.insertarRegistro(registroLoguin);
+
+
             MenuAdministrativo menuAdministrativo = new MenuAdministrativo();
+            
             menuAdministrativo.Show();
             this.Hide();
+         
 
-            
+          
+
+           
+
         }
         private async void conteoMensajeError()
         {

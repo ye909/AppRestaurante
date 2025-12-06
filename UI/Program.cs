@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Negocio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UI.Administracion;
 
 namespace UI
 {
@@ -17,7 +19,7 @@ namespace UI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new MenuPrincipal());
-            Application.Run(new Loguin());
+            Application.Run(new InfoReservas());
         }
     }
 }
