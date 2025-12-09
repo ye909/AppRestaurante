@@ -25,62 +25,70 @@ namespace Conexion
                 return tabla;
             }
         }
-
-        public void insertarRegistro(Entidades.Registro items)
+        public bool InsertarRegistro(Entidades.Registro items)
         {
-            using (SqlConnection conexion = new SqlConnection(linkconexion))
-            {
-                SqlCommand cmd = new SqlCommand("insert into Registro(Nombres,Apellidos,Direccion,Telefono,Genero,FechaRegistro,Contrasena)" +
-                    "VALUES(@Nombres,@Apellidos,@Direccion,@Telefono,@Genero,@FechaRegistro,@Contrasena)");
-                cmd.Parameters.AddWithValue("@Nombres",items.Nombres);
-                cmd.Parameters.AddWithValue("@Apellidos", items.Apellidos);
-                cmd.Parameters.AddWithValue("@Direccion", items.Direccion);
-                cmd.Parameters.AddWithValue("@Telefono", items.Telefono);
-                cmd.Parameters.AddWithValue("@Genero", items.genero); 
-                     cmd.Parameters.AddWithValue("@FechaRegistro", items.FechaRegistro);
-                //cmd.Parameters.AddWithValue("@FechaRegistro", DateTime.Now);
-                cmd.Parameters.AddWithValue("@Contrasena", items.Contraseña);
+          
+                using (SqlConnection conexion = new SqlConnection(linkconexion))
+                {
+                    string query = @"INSERT INTO Registro(Nombres, Apellidos, Direccion, Telefono, Genero, Email, Contrasena, FechaRegistro) 
+                                     VALUES(@Nombres, @Apellidos, @Direccion, @Telefono, @Genero, @Email, @Contrasena, @FechaRegistro)";
+
+                    SqlCommand cmd = new SqlCommand(query, conexion);
+                    cmd.Parameters.AddWithValue("@Nombres", items.Nombres);
+                    cmd.Parameters.AddWithValue("@Apellidos", items.Apellidos);
+                    cmd.Parameters.AddWithValue("@Direccion", items.Direccion);
+                    cmd.Parameters.AddWithValue("@Telefono", items.Telefono);
+                    cmd.Parameters.AddWithValue("@Genero", items.Genero);
+                    cmd.Parameters.AddWithValue("@Email", items.Email);
+                    cmd.Parameters.AddWithValue("@Contrasena", items.Contraseña);
+                    cmd.Parameters.AddWithValue("@FechaRegistro", DateTime.Now);
 
 
-
-                conexion.Open();
-                cmd.ExecuteNonQuery();
+                    conexion.Open();
+                int DT = cmd.ExecuteNonQuery();
+                return  DT > 0;
             }
         }
- 
-        public void ActualizarRegistro(Entidades.Registro items)
-        {
-            using (SqlConnection conexion = new SqlConnection(linkconexion))
-            {
-                SqlCommand cmd = new SqlCommand("Update Registro set Nombres=@Nombres, Apellidos=@Apellidos, Direccion=@Direccion, Telefono=@Telefono, Genero=@Genero, FechaRegistro=@FechaRegistro, Contrasena=@Contrasena where Email=@Email");
-                cmd.Parameters.AddWithValue("@Nombres", items.Nombres);
-                cmd.Parameters.AddWithValue("@Apellidos", items.Apellidos);
-                cmd.Parameters.AddWithValue("@Direccion", items.Direccion);
-                cmd.Parameters.AddWithValue("@Telefono", items.Telefono);
-                cmd.Parameters.AddWithValue("@Genero", items.genero);
-                cmd.Parameters.AddWithValue("@FechaRegistro", items.FechaRegistro);
-                cmd.Parameters.AddWithValue("@Contrasena", items.Contraseña);
-                cmd.Parameters.AddWithValue("@Email", items.Email);
-                conexion.Open();
-                cmd.ExecuteNonQuery();
-            }
-        }
-        // MÉTODO PARA VALIDAR LOGIN
         public bool ValidarLogin(Entidades.Registro logi)
         {
             using (SqlConnection conexion = new SqlConnection(linkconexion))
             {
-                SqlCommand cmd = new SqlCommand(
-                    "SELECT COUNT(*) FROM Registro WHERE Email = @Email AND Contrasena = @Contrasena",
-                    conexion);
 
-                cmd.Parameters.AddWithValue("@Email", logi.Email);
+                string query = "SELECT COUNT(*) FROM Registro WHERE Email = @Email AND Contrasena = @Contrasena";
+        SqlCommand cmd = new SqlCommand(query, conexion);
+        cmd.Parameters.AddWithValue("@Email", logi.Email);
                 cmd.Parameters.AddWithValue("@Contrasena", logi.Contraseña);
 
                 conexion.Open();
-                int count = (int)cmd.ExecuteScalar();
-
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
                 return count > 0;
+            }
+     }
+        public bool ActualizarRegistro(Entidades.Registro items)
+        {
+            using (SqlConnection conexion = new SqlConnection(linkconexion))
+            {
+                string query = @"UPDATE Registro SET 
+                                Nombres = @Nombres, 
+                                Apellidos = @Apellidos, 
+                                Direccion = @Direccion, 
+                                Telefono = @Telefono, 
+                                Genero = @Genero, 
+                                Contrasena = @Contrasena 
+                                WHERE Email = @Email";
+
+                SqlCommand cmd = new SqlCommand(query, conexion);
+                cmd.Parameters.AddWithValue("@Nombres", items.Nombres);
+                cmd.Parameters.AddWithValue("@Apellidos", items.Apellidos);
+                cmd.Parameters.AddWithValue("@Direccion", items.Direccion);
+                cmd.Parameters.AddWithValue("@Telefono", items.Telefono);
+                cmd.Parameters.AddWithValue("@Genero", items.Genero);
+                cmd.Parameters.AddWithValue("@Contrasena", items.Contraseña);
+                cmd.Parameters.AddWithValue("@Email", items.Email);
+
+                conexion.Open();
+                int rowsAffected = cmd.ExecuteNonQuery();
+                return rowsAffected > 0;
             }
         }
 

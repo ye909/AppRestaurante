@@ -24,24 +24,24 @@ namespace UI.Administracion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Negocio.InfoRegistro infoRegistro = new Negocio.InfoRegistro();
+            //Negocio.InfoRegistro infoRegistro = new Negocio.InfoRegistro();
 
-            var tipo = infoRegistro.optenerDatos();
+            //var tipo = infoRegistro.optenerDatos();
 
             // Verificar si el DataTable tiene datos
-            if (tipo != null && tipo.Rows.Count > 0)
-            {
-                dtgInfoReservas.DataSource = tipo;
-            }
-            else
-            {
+            //if (tipo != null && tipo.Rows.Count > 0)
+            //{
+            //    dtgInfoReservas.DataSource = tipo;
+            //}
+            //else
+            //{
                 // Opcional: Mostrar mensaje si no hay datos
-                MessageBox.Show("No hay registros disponibles", "Información",
-                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("No hay registros disponibles", "Información",
+                //                MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Opcional: Limpiar el DataGridView
-                dtgInfoReservas.DataSource = null;
-            }
+            //    dtgInfoReservas.DataSource = null;
+            //}
         }
 
         private void dtgInfoReservas_CellContentClick(object sender, DataGridViewCellEventArgs e)

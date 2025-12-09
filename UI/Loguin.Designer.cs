@@ -41,8 +41,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtMensaje = new System.Windows.Forms.Label();
+            this.ImgOjoCerado = new System.Windows.Forms.PictureBox();
+            this.ImgOjoAbierto = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgOjoCerado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgOjoAbierto)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -72,6 +76,7 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Location = new System.Drawing.Point(632, 221);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
@@ -126,11 +131,13 @@
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(632, 328);
+            this.txtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtContraseña.Location = new System.Drawing.Point(630, 328);
             this.txtContraseña.Multiline = true;
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(414, 34);
             this.txtContraseña.TabIndex = 9;
+            this.txtContraseña.UseSystemPasswordChar = true;
             // 
             // pictureBox1
             // 
@@ -169,18 +176,43 @@
             // 
             this.txtMensaje.AutoSize = true;
             this.txtMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMensaje.Location = new System.Drawing.Point(740, 374);
+            this.txtMensaje.Location = new System.Drawing.Point(691, 370);
             this.txtMensaje.Name = "txtMensaje";
             this.txtMensaje.Size = new System.Drawing.Size(76, 20);
             this.txtMensaje.TabIndex = 14;
             this.txtMensaje.Text = "Mensaje";
             this.txtMensaje.Visible = false;
             // 
+            // ImgOjoCerado
+            // 
+            this.ImgOjoCerado.BackColor = System.Drawing.Color.Transparent;
+            this.ImgOjoCerado.Image = ((System.Drawing.Image)(resources.GetObject("ImgOjoCerado.Image")));
+            this.ImgOjoCerado.Location = new System.Drawing.Point(1011, 331);
+            this.ImgOjoCerado.Name = "ImgOjoCerado";
+            this.ImgOjoCerado.Size = new System.Drawing.Size(27, 31);
+            this.ImgOjoCerado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ImgOjoCerado.TabIndex = 27;
+            this.ImgOjoCerado.TabStop = false;
+            this.ImgOjoCerado.Click += new System.EventHandler(this.ImgOjoCerado_Click);
+            // 
+            // ImgOjoAbierto
+            // 
+            this.ImgOjoAbierto.Image = ((System.Drawing.Image)(resources.GetObject("ImgOjoAbierto.Image")));
+            this.ImgOjoAbierto.Location = new System.Drawing.Point(1011, 331);
+            this.ImgOjoAbierto.Name = "ImgOjoAbierto";
+            this.ImgOjoAbierto.Size = new System.Drawing.Size(27, 31);
+            this.ImgOjoAbierto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ImgOjoAbierto.TabIndex = 26;
+            this.ImgOjoAbierto.TabStop = false;
+            this.ImgOjoAbierto.Click += new System.EventHandler(this.ImgOjoAbierto_Click);
+            // 
             // Loguin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1078, 611);
+            this.Controls.Add(this.ImgOjoCerado);
+            this.Controls.Add(this.ImgOjoAbierto);
             this.Controls.Add(this.txtMensaje);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -200,6 +232,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgOjoCerado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgOjoAbierto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,5 +253,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label txtMensaje;
+        private System.Windows.Forms.PictureBox ImgOjoCerado;
+        private System.Windows.Forms.PictureBox ImgOjoAbierto;
     }
 }

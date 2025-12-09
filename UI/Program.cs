@@ -18,8 +18,8 @@ namespace UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new MenuPrincipal());
-            Application.Run(new InfoReservas());
+            //Application.Run(new Registro());
+            Application.Run(new Loguin());
         }
     }
 }

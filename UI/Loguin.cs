@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,9 +15,13 @@ namespace UI
 {
     public partial class Loguin : Form
     {
+        // Variable que guarda una instancia de la clase de negocio
+        private InfoRegistro negocioRegistro;
         public Loguin()
         {
             InitializeComponent();
+            // Inicializar la instancia de la clase de negocio
+            negocioRegistro = new InfoRegistro();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -32,65 +37,78 @@ namespace UI
 
         private void  btnInicioLoguin_Click(object sender, EventArgs e)
         {
-            if (txtContraseña.Text == "1" && txtEmail.Text == "alex")
-            {
-                txtMensaje.Visible = true;
-                txtMensaje.Text = "Inicio de sesión exitoso";
-                txtMensaje.ForeColor = Color.ForestGreen;
-                conteoMensajeInicio();
-            }else if (txtContraseña.Text == "12" && txtEmail.Text == "yesid")
-            {
-                txtMensaje.Text = "Inicio de sesión exitoso";
-                txtMensaje.ForeColor = Color.ForestGreen;
-                conteoMensajeInicio();
 
+            // Validar campos vacíos
+
+            if (string.IsNullOrWhiteSpace(txtEmail.Text) || string.IsNullOrWhiteSpace(txtContraseña.Text))
+            {
+               conteoMensajeError();
+                return;
             }
-            else if (txtContraseña.Text == "123" && txtEmail.Text == "andres")
-            {
-                txtMensaje.Text = "Inicio de sesión exitoso";
-                txtMensaje.ForeColor = Color.ForestGreen;
-                conteoMensajeInicio();
-
-            }
-            else
-            {
-                txtMensaje.Visible = true;
-                txtMensaje.Text = "Por favor ingrese todos los datos";
-                txtMensaje.ForeColor = Color.Red;
-                conteoMensajeError();
-            }
-
-
-        }
-        private async void conteoMensajeInicio()
-        {
-           
-            await Task.Delay(2600);
-            Entidades.Registro registroLoguin = new Entidades.Registro();
-            registroLoguin.Email = txtEmail.Text;
-            registroLoguin.Contraseña = txtContraseña.Text;
-
-           
-
-            Negocio.InfoRegistro infoRegistro = new Negocio.InfoRegistro();
-            infoRegistro.insertarRegistro(registroLoguin);
-
-
-            MenuAdministrativo menuAdministrativo = new MenuAdministrativo();
-            
-            menuAdministrativo.Show();
-            this.Hide();
-         
 
           
+            Entidades.Registro loginInfo = new Entidades.Registro
+                {
+                    Email = txtEmail.Text.Trim(),
+                    Contraseña = txtContraseña.Text.Trim(),
+             
+                };
 
+
+
+            // Validar credenciales
+            bool loginExitoso = negocioRegistro.InicioLogin(loginInfo);
+
+            if (loginExitoso)
+            {
+
+                string mensaje = $"     Bienvenido a\nAfroTech Solution";
+            
+                MessageBox.Show(mensaje);
+            }
            
 
-        }
-        private async void conteoMensajeError()
+            string autenticacion = txtEmail.Text;   
+
+            switch (autenticacion)
+            {
+                case "alexYesid711@gmail.com":
+                    // Abrir menú principal
+                    
+                    MenuAdministrativo menuAdministrativo = new MenuAdministrativo();
+                    menuAdministrativo.Show();
+                    this.Hide();
+                    break;
+
+                case "a":
+
+                    // Abrir menú principal
+                    
+                   Menuplatos menuplatos = new Menuplatos();
+                    menuplatos.Show();
+                    this.Hide();
+                    break;
+                    default:
+                   
+                    break;
+
+            }
+
+
+            }
+            
+            private async void conteoMensajeError()
         {
+            await Task.Delay(200);
+            txtMensaje.Visible = true;
+              txtMensaje.Text = "Por favor ingrese email y contraseña";
+              txtMensaje.ForeColor = Color.Red;
+
             await Task.Delay(2000);
-            txtMensaje.Text = "";
+            txtContraseña.Text="";
+            txtEmail.Text = "";
+            txtMensaje.Visible = false;
+
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -98,6 +116,20 @@ namespace UI
             Registro registro = new Registro();
             registro.Show();
             this.Hide();
+        }
+
+        private void ImgOjoCerado_Click(object sender, EventArgs e)
+        {
+            txtContraseña.UseSystemPasswordChar = false;
+            txtContraseña.PasswordChar = '*';
+            ImgOjoCerado.Visible = false;
+        }
+
+        private void ImgOjoAbierto_Click(object sender, EventArgs e)
+        {
+
+            txtContraseña.UseSystemPasswordChar = true;
+            ImgOjoCerado.Visible = true;
         }
     }
 }
