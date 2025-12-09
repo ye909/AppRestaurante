@@ -18,8 +18,8 @@ namespace UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Registro());
-            Application.Run(new Loguin());
+          
+            Application.Run(new Contacto());
         }
     }
 }
