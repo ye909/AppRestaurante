@@ -187,6 +187,7 @@
             this.btnMenu.TabIndex = 8;
             this.btnMenu.Text = "Menu";
             this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnContacto
             // 
@@ -203,6 +204,7 @@
             this.btnContacto.TabIndex = 9;
             this.btnContacto.Text = "Contacto";
             this.btnContacto.UseVisualStyleBackColor = false;
+            this.btnContacto.Click += new System.EventHandler(this.btnContacto_Click);
             // 
             // MenuPrincipal
             // 

@@ -71,7 +71,9 @@ namespace UI
 
         private void label3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.Show();
+            this.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)

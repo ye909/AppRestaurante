@@ -18,8 +18,8 @@ namespace UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-          
-            Application.Run(new Contacto());
+            Application.Run(new MenuBanderas());
+            //Application.Run(new MenuMesas());
         }
     }
 }

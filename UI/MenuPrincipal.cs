@@ -43,6 +43,7 @@ namespace UI
 
         private void btnRegistro_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Registro registro = new Registro();
             registro.Show();
 
@@ -58,6 +59,22 @@ namespace UI
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuBanderas banderas = new MenuBanderas();
+            banderas.Show();
+            this.Hide();
+        }
+
+        private void btnContacto_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Contacto contacto = new Contacto();
+            contacto.Show();
+            this.Hide();
         }
     }
 }

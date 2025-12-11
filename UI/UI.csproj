@@ -70,6 +70,18 @@
     <Compile Include="Loguin.Designer.cs">
       <DependentUpon>Loguin.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuBanderas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuBanderas.Designer.cs">
+      <DependentUpon>MenuBanderas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuMesas.Designer.cs">
+      <DependentUpon>MenuMesas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menuplatos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +122,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Loguin.resx">
       <DependentUpon>Loguin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuBanderas.resx">
+      <DependentUpon>MenuBanderas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuMesas.resx">
+      <DependentUpon>MenuMesas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>

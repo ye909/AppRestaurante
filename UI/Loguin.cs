@@ -84,7 +84,7 @@ namespace UI
 
                     // Abrir menú principal
                     
-                   Menuplatos menuplatos = new Menuplatos();
+                   MenuMesas menuplatos = new MenuMesas();
                     menuplatos.Show();
                     this.Hide();
                     break;
