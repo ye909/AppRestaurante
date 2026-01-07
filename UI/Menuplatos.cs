@@ -16,5 +16,36 @@ namespace UI
         {
             InitializeComponent();
         }
+        
+        List<string> platosSeleccionados = new List<string>();
+
+        private void logicaBtn()
+        {
+            Button[] botonesPlatos = { btnAgregar1, btnAgregar2 };
+          
+            for (int i = 0; i < botonesPlatos.Length; i++)
+            {
+                platosSeleccionados.Add(botonesPlatos[i].Text);
+
+            }
+            MessageBox.Show(string.Join("\n", platosSeleccionados), "Platos Seleccionados");
+        }
+
+        private void btnAgregar1_Click(object sender, EventArgs e)
+        {
+            logicaBtn();
+
+
+        }
+
+        private void Menuplatos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregar2_Click(object sender, EventArgs e)
+        {
+            logicaBtn();
+        }
     }
 }

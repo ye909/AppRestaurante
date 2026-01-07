@@ -31,7 +31,9 @@ namespace UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            MenuPlatosEcuador menuEcuador = new MenuPlatosEcuador();
+            verVentanas(menuEcuador);
+            
         }
 
         private void MenuBanderas_Load(object sender, EventArgs e)
@@ -39,72 +41,70 @@ namespace UI
             OpcionMenuPlatosPais();
         }
 
+        private void verVentanas(object hijo)
+        {
+            if (this.PanelControl.Controls.Count > 0)this.PanelControl.Controls.RemoveAt(0);
+            {
+                Form fh = hijo as Form;
+                fh.TopLevel = false;
+                fh.Dock = DockStyle.Fill;
+                this.PanelControl.Controls.Add(fh);
+                this.PanelControl.Tag = fh;
+                fh.Show();
+
+            }
+        }
         private void OpcionMenuPlatosPais()
         {
-            Button[] platsolatinos = { btnArgentina, btnBrasil, btnChile, btnColombia, btnMexico, btnPeru, btnVenezuela };
+            Button[] botonesPlatos = { btnArgentina, btnHonduras, btnGuatemala, btnBrasil, btnEcuador, btnColombia, btnMexico, btnPeru, btnVenezuela };
+            PictureBox[] banderasplatos={ pictureBoxArgentina, pictureBoxHonduras, pictureBoxGuatemala, pictureBoxEcuador, pictureBoxBrasil, pictureBoxColombia, pictureBoxMexico, pictureBoxPeru, pictureBoxVenezuela };
 
-            foreach (Button boton in botones)
-            {
-                switch (platsolatinos)
-                {
-                    case btnArgentina:
-                        boton.Click += (s, e) =>
-                        {
-                            MenuPlatosPais menuPlatos = new MenuPlatosPais("Argentina");
-                            menuPlatos.Show();
-                            this.Hide();
-                        };
-                        break;
-                    case btnBrasil:
-                        boton.Click += (s, e) =>
-                        {
-                            MenuPlatosPais menuPlatos = new MenuPlatosPais("Brasil");
-                            menuPlatos.Show();
-                            this.Hide();
-                        };
-                        break;
-                    case btnChile:
-                        boton.Click += (s, e) =>
-                        {
-                            MenuPlatosPais menuPlatos = new MenuPlatosPais("Chile");
-                            menuPlatos.Show();
-                            this.Hide();
-                        };
-                        break;
-                    case btnColombia:
-                        boton.Click += (s, e) =>
-                        {
-                            MenuPlatosPais menuPlatos = new MenuPlatosPais("Colombia");
-                            menuPlatos.Show();
-                            this.Hide();
-                        };
-                        break;
-                    case btnMexico:
-                        boton.Click += (s, e) =>
-                        {
-                            MenuPlatosPais menuPlatos = new MenuPlatosPais("Mexico");
-                            menuPlatos.Show();
-                            this.Hide();
-                        };
-                        break;
-                    case btnPeru:
-                        boton.Click += (s, e) =>
-                        {
-                            MenuPlatosPais menuPlatos = new MenuPlatosPais("Peru");
-                            menuPlatos.Show();
-                            this.Hide();
-                        };
-                        break;
-                    case btnVenezuela:
-                        boton.Click += (s, e) =>
-                        {
-                            MenuPlatosPais menuPlatos = new MenuPlatosPais("Venezuela");
-                            menuPlatos.Show();
-                            this.Hide();
-                        };
-                        break;
-                }
+            
             }
+
+        private void btnEcuador_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuatemala_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHonduras_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBrasil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVenezuela_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPeru_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnColombia_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMexico_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnArgentina_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

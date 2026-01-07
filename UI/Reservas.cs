@@ -19,6 +19,12 @@ namespace UI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("su Reserva fue enviada exitosamente ");
+            this.Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }
