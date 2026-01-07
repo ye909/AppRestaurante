@@ -8,10 +8,13 @@ namespace Entidades
 {
     public class Rerservas
     {
-        public string descripcion {  get; set; }
-        public  string nombre { get; set; }
+        public string Descripcion {  get; set; }
+        public  string Nombre { get; set; }
         public string Telefono { get; set; }
-        public int cantidad { get; set; }
-
+        public int Cantidad { get; set; }
+        public DateTime Fecha { get; set; }
+        public string Hora { get; set; }
+        public string Parqueadero { get; set; }
+        public string Pago { get; set; }
     }
 }
