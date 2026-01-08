@@ -18,7 +18,7 @@ namespace UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Reservas());
+            Application.Run(new MenuParqueadero());
             //Application.Run(new MenuMesas());
         }
     }

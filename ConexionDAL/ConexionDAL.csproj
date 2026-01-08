@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BDParqueadero.cs" />
     <Compile Include="BDReservasUser.cs" />
     <Compile Include="ContactoUser.cs" />
     <Compile Include="Registro.cs" />
