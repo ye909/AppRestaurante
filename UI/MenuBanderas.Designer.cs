@@ -512,7 +512,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.PanelControl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MenuBanderas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuBanderas";
             this.Load += new System.EventHandler(this.MenuBanderas_Load);
             this.panel1.ResumeLayout(false);

@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI
+namespace UI.Administracion
 {
-    public partial class MenuPlatosEcuador : Form
+    public partial class Personal : Form
     {
-        public MenuPlatosEcuador()
+        public Personal()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MenuPlatosEcuador_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

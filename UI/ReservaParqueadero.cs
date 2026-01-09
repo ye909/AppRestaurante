@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace UI
@@ -34,23 +27,41 @@ namespace UI
 
         private void btnReservaAqui_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtNombres.Text) || string.IsNullOrEmpty(txtApellidos.Text))
+            // Validar campos
+            if (string.IsNullOrEmpty(txtNombres.Text) || string.IsNullOrEmpty(txtApellidos.Text) ||
+                cbTipo.SelectedIndex == 0) // Validar que no sea "Selecione Parqueadero"
             {
-                MessageBox.Show("Lo siento los campos no puede estar en blanco"); 
+                MessageBox.Show("Los campos no pueden estar en blanco y debe seleccionar un tipo de parqueadero");
                 return;
+
+
+          
+             
             }
             else
             {
                 this.Hide();
-             
             }
-          
+            // Capturar datos del ComboBox
+            string tipoParqueadero = cbTipo.SelectedItem.ToString();
+            MessageBox.Show("Reserva realizada para: " + tipoParqueadero);
+
         }
     
 
         private void ReservaParqueadero_Load(object sender, EventArgs e)
         {
-           
+            opcionTipoParqueadero();
+        }
+
+        private void opcionTipoParqueadero()
+        {
+            cbTipo.Items.Add("Selecione Parqueadero");
+            cbTipo.Items.Add("Moto");
+            cbTipo.Items.Add("Carro");
+            cbTipo.Items.Add("Bicicleta");
+            cbTipo.Items.Add("Patineta Electrica");
+            cbTipo.SelectedIndex = 0;
         }
     }
 }

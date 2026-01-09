@@ -26,7 +26,10 @@ namespace UI
 
         private void label3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+           MenuPrincipal menuprincipal= new MenuPrincipal();
+            menuprincipal.Show();
+          
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -47,25 +50,25 @@ namespace UI
             }
 
           
-            Entidades.Registro loginInfo = new Entidades.Registro
-                {
-                    Email = txtEmail.Text.Trim(),
-                    Contraseña = txtContraseña.Text.Trim(),
+            //Entidades.Registro loginInfo = new Entidades.Registro
+            //    {
+            //        Email = txtEmail.Text.Trim(),
+            //        Contraseña = txtContraseña.Text.Trim(),
              
-                };
+            //    };
 
 
 
             // Validar credenciales
-            bool loginExitoso = negocioRegistro.InicioLogin(loginInfo);
+            //bool loginExitoso = negocioRegistro.InicioLogin(loginInfo);
 
-            if (loginExitoso)
-            {
+            //if (loginExitoso)
+            //{
 
-                string mensaje = $"     Bienvenido a\nAfroTech Solution";
+            //    string mensaje = $"     Bienvenido a\nAfroTech Solution";
             
-                MessageBox.Show(mensaje);
-            }
+            //    MessageBox.Show(mensaje);
+            //}
            
 
             string autenticacion = txtEmail.Text;   
@@ -73,24 +76,38 @@ namespace UI
             switch (autenticacion)
             {
                 case "alexYesid711@gmail.com":
-                    // Abrir menú principal
-                    
+                 
                     MenuAdministrativo menuAdministrativo = new MenuAdministrativo();
                     menuAdministrativo.Show();
                     this.Hide();
                     break;
 
-                case "a":
+                case "Cocina33@gmail.com":
 
-                    // Abrir menú principal
+               
                     
-                   MenuMesas menuplatos = new MenuMesas();
-                    menuplatos.Show();
+                   MenuCocina menucocina = new MenuCocina();
+                    menucocina.Show();
                     this.Hide();
                     break;
-                    default:
+             
                    
                     break;
+                    case "Mesero123@gmai.com":
+                    MenuMesero menumesero = new MenuMesero();
+                    menumesero.Show();
+                    this.Hide();
+                    break;
+
+                  case "Cajero":
+                    MenuCajero menucajero = new MenuCajero();
+                    menucajero.Show();
+                    this.Hide();
+
+                    break;
+
+
+             
 
             }
 

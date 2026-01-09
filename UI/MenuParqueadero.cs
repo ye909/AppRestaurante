@@ -19,7 +19,9 @@ namespace UI
 
         private void label8_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            MenuPrincipal menuPrincipal = new MenuPrincipal();
+            menuPrincipal.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -63,6 +65,12 @@ namespace UI
         {
             UI.ReservaParqueadero abrirVentanaParqueadero = new UI.ReservaParqueadero();
             abrirVentanaParqueadero.ShowDialog();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menuPrincipal = new MenuPrincipal();
+            menuPrincipal.Show();
         }
     }
 }

@@ -48,11 +48,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btnReserva1 = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -101,6 +103,7 @@
             // 
             this.btnReserva2.BackColor = System.Drawing.Color.OrangeRed;
             this.btnReserva2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReserva2.ForeColor = System.Drawing.Color.White;
             this.btnReserva2.Location = new System.Drawing.Point(328, 519);
             this.btnReserva2.Name = "btnReserva2";
             this.btnReserva2.Size = new System.Drawing.Size(184, 43);
@@ -134,6 +137,7 @@
             // 
             this.btnReserva4.BackColor = System.Drawing.Color.OrangeRed;
             this.btnReserva4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReserva4.ForeColor = System.Drawing.Color.White;
             this.btnReserva4.Location = new System.Drawing.Point(876, 519);
             this.btnReserva4.Name = "btnReserva4";
             this.btnReserva4.Size = new System.Drawing.Size(184, 43);
@@ -148,9 +152,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(916, 260);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 24);
+            this.label6.Size = new System.Drawing.Size(88, 24);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Ciclas";
+            this.label6.Text = "Bicicleta";
             // 
             // pictureBox3
             // 
@@ -202,6 +206,7 @@
             // 
             this.btnReserva3.BackColor = System.Drawing.Color.OrangeRed;
             this.btnReserva3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReserva3.ForeColor = System.Drawing.Color.White;
             this.btnReserva3.Location = new System.Drawing.Point(604, 519);
             this.btnReserva3.Name = "btnReserva3";
             this.btnReserva3.Size = new System.Drawing.Size(184, 43);
@@ -255,6 +260,7 @@
             // 
             this.btnReserva1.BackColor = System.Drawing.Color.OrangeRed;
             this.btnReserva1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReserva1.ForeColor = System.Drawing.Color.White;
             this.btnReserva1.Location = new System.Drawing.Point(58, 519);
             this.btnReserva1.Name = "btnReserva1";
             this.btnReserva1.Size = new System.Drawing.Size(184, 43);
@@ -263,12 +269,24 @@
             this.btnReserva1.UseVisualStyleBackColor = false;
             this.btnReserva1.Click += new System.EventHandler(this.btnReserva1_Click);
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(0, 49);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(49, 35);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 23;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
             // MenuParqueadero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1126, 635);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.btnReserva1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label7);
@@ -298,6 +316,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,5 +343,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnReserva1;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

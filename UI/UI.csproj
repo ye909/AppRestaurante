@@ -58,6 +58,30 @@
     <Compile Include="Administracion\MenuAdministrativo.Designer.cs">
       <DependentUpon>MenuAdministrativo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Administracion\panelInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\panelInventario.Designer.cs">
+      <DependentUpon>panelInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\panelReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\panelReservas.Designer.cs">
+      <DependentUpon>panelReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\panelRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\panelRoles.Designer.cs">
+      <DependentUpon>panelRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\Personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\Personal.Designer.cs">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Contacto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,23 +106,35 @@
     <Compile Include="MenuBanderas.Designer.cs">
       <DependentUpon>MenuBanderas.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuCajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCajero.Designer.cs">
+      <DependentUpon>MenuCajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCocina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCocina.Designer.cs">
+      <DependentUpon>MenuCocina.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuMesas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuMesas.Designer.cs">
       <DependentUpon>MenuMesas.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuMesero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuMesero.Designer.cs">
+      <DependentUpon>MenuMesero.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuParqueadero.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuParqueadero.Designer.cs">
       <DependentUpon>MenuParqueadero.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Menuplatos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Menuplatos.Designer.cs">
-      <DependentUpon>Menuplatos.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPlatosEcuador.cs">
       <SubType>Form</SubType>
@@ -144,6 +180,18 @@
     <EmbeddedResource Include="Administracion\MenuAdministrativo.resx">
       <DependentUpon>MenuAdministrativo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\panelInventario.resx">
+      <DependentUpon>panelInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\panelReservas.resx">
+      <DependentUpon>panelReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\panelRoles.resx">
+      <DependentUpon>panelRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\Personal.resx">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Contacto.resx">
       <DependentUpon>Contacto.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,9 +209,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuParqueadero.resx">
       <DependentUpon>MenuParqueadero.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Menuplatos.resx">
-      <DependentUpon>Menuplatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPlatosEcuador.resx">
       <DependentUpon>MenuPlatosEcuador.cs</DependentUpon>

@@ -40,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnContacto = new System.Windows.Forms.Button();
+            this.btnParqueadero = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -206,11 +207,29 @@
             this.btnContacto.UseVisualStyleBackColor = false;
             this.btnContacto.Click += new System.EventHandler(this.btnContacto_Click);
             // 
+            // btnParqueadero
+            // 
+            this.btnParqueadero.BackColor = System.Drawing.Color.Purple;
+            this.btnParqueadero.FlatAppearance.BorderSize = 0;
+            this.btnParqueadero.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OrangeRed;
+            this.btnParqueadero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnParqueadero.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnParqueadero.ForeColor = System.Drawing.Color.White;
+            this.btnParqueadero.Location = new System.Drawing.Point(568, 53);
+            this.btnParqueadero.Margin = new System.Windows.Forms.Padding(6);
+            this.btnParqueadero.Name = "btnParqueadero";
+            this.btnParqueadero.Size = new System.Drawing.Size(176, 42);
+            this.btnParqueadero.TabIndex = 10;
+            this.btnParqueadero.Text = "Parqueadero";
+            this.btnParqueadero.UseVisualStyleBackColor = false;
+            this.btnParqueadero.Click += new System.EventHandler(this.btnParqueadero_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1365, 661);
+            this.Controls.Add(this.btnParqueadero);
             this.Controls.Add(this.btnReservas);
             this.Controls.Add(this.btnContacto);
             this.Controls.Add(this.btnMenu);
@@ -248,5 +267,6 @@
         private System.Windows.Forms.Button btnContacto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnParqueadero;
     }
 }

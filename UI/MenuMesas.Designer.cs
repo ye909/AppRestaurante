@@ -28,212 +28,343 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.LbMesa1 = new System.Windows.Forms.Label();
-            this.LbMesa2 = new System.Windows.Forms.Label();
-            this.LbMesa3 = new System.Windows.Forms.Label();
-            this.LbMesa5 = new System.Windows.Forms.Label();
-            this.LbMesa4 = new System.Windows.Forms.Label();
-            this.LbMesa7 = new System.Windows.Forms.Label();
-            this.LbMesa8 = new System.Windows.Forms.Label();
-            this.LbMesa6 = new System.Windows.Forms.Label();
-            this.LbEstado1 = new System.Windows.Forms.Label();
-            this.LbEstado5 = new System.Windows.Forms.Label();
-            this.LbEstado4 = new System.Windows.Forms.Label();
-            this.LbEstado3 = new System.Windows.Forms.Label();
-            this.LbEstado2 = new System.Windows.Forms.Label();
-            this.LbEstado7 = new System.Windows.Forms.Label();
-            this.LbEstado6 = new System.Windows.Forms.Label();
-            this.LbEstado8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // label9
             // 
-            this.button1.Location = new System.Drawing.Point(490, 336);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(756, 235);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.TabIndex = 32;
+            this.label9.Text = "label9";
             // 
-            // LbMesa1
+            // pictureBox4
             // 
-            this.LbMesa1.AutoSize = true;
-            this.LbMesa1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbMesa1.Location = new System.Drawing.Point(172, 91);
-            this.LbMesa1.Name = "LbMesa1";
-            this.LbMesa1.Size = new System.Drawing.Size(92, 31);
-            this.LbMesa1.TabIndex = 1;
-            this.LbMesa1.Text = "label1";
+            this.pictureBox4.Location = new System.Drawing.Point(750, 127);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(144, 98);
+            this.pictureBox4.TabIndex = 31;
+            this.pictureBox4.TabStop = false;
             // 
-            // LbMesa2
+            // label10
             // 
-            this.LbMesa2.AutoSize = true;
-            this.LbMesa2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbMesa2.Location = new System.Drawing.Point(318, 91);
-            this.LbMesa2.Name = "LbMesa2";
-            this.LbMesa2.Size = new System.Drawing.Size(92, 31);
-            this.LbMesa2.TabIndex = 2;
-            this.LbMesa2.Text = "label2";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(779, 104);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(67, 20);
+            this.label10.TabIndex = 30;
+            this.label10.Text = "label10";
             // 
-            // LbMesa3
+            // label7
             // 
-            this.LbMesa3.AutoSize = true;
-            this.LbMesa3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbMesa3.Location = new System.Drawing.Point(432, 91);
-            this.LbMesa3.Name = "LbMesa3";
-            this.LbMesa3.Size = new System.Drawing.Size(92, 31);
-            this.LbMesa3.TabIndex = 3;
-            this.LbMesa3.Text = "label2";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(525, 235);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 29;
+            this.label7.Text = "label7";
             // 
-            // LbMesa5
+            // pictureBox3
             // 
-            this.LbMesa5.AutoSize = true;
-            this.LbMesa5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbMesa5.Location = new System.Drawing.Point(172, 223);
-            this.LbMesa5.Name = "LbMesa5";
-            this.LbMesa5.Size = new System.Drawing.Size(92, 31);
-            this.LbMesa5.TabIndex = 4;
-            this.LbMesa5.Text = "label2";
+            this.pictureBox3.Location = new System.Drawing.Point(519, 127);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(144, 98);
+            this.pictureBox3.TabIndex = 28;
+            this.pictureBox3.TabStop = false;
             // 
-            // LbMesa4
+            // label8
             // 
-            this.LbMesa4.AutoSize = true;
-            this.LbMesa4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbMesa4.Location = new System.Drawing.Point(601, 91);
-            this.LbMesa4.Name = "LbMesa4";
-            this.LbMesa4.Size = new System.Drawing.Size(92, 31);
-            this.LbMesa4.TabIndex = 5;
-            this.LbMesa4.Text = "label2";
-            this.LbMesa4.Click += new System.EventHandler(this.label3_Click);
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(548, 104);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 20);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "label8";
             // 
-            // LbMesa7
+            // label5
             // 
-            this.LbMesa7.AutoSize = true;
-            this.LbMesa7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbMesa7.Location = new System.Drawing.Point(430, 223);
-            this.LbMesa7.Name = "LbMesa7";
-            this.LbMesa7.Size = new System.Drawing.Size(92, 31);
-            this.LbMesa7.TabIndex = 6;
-            this.LbMesa7.Text = "label2";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(298, 235);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "label5";
             // 
-            // LbMesa8
+            // pictureBox2
             // 
-            this.LbMesa8.AutoSize = true;
-            this.LbMesa8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbMesa8.Location = new System.Drawing.Point(601, 223);
-            this.LbMesa8.Name = "LbMesa8";
-            this.LbMesa8.Size = new System.Drawing.Size(92, 31);
-            this.LbMesa8.TabIndex = 7;
-            this.LbMesa8.Text = "label2";
+            this.pictureBox2.Location = new System.Drawing.Point(292, 127);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(144, 98);
+            this.pictureBox2.TabIndex = 25;
+            this.pictureBox2.TabStop = false;
             // 
-            // LbMesa6
+            // label6
             // 
-            this.LbMesa6.AutoSize = true;
-            this.LbMesa6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbMesa6.Location = new System.Drawing.Point(328, 223);
-            this.LbMesa6.Name = "LbMesa6";
-            this.LbMesa6.Size = new System.Drawing.Size(92, 31);
-            this.LbMesa6.TabIndex = 8;
-            this.LbMesa6.Text = "label2";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(321, 104);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 20);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "label6";
             // 
-            // LbEstado1
+            // label2
             // 
-            this.LbEstado1.AutoSize = true;
-            this.LbEstado1.Location = new System.Drawing.Point(205, 171);
-            this.LbEstado1.Name = "LbEstado1";
-            this.LbEstado1.Size = new System.Drawing.Size(35, 13);
-            this.LbEstado1.TabIndex = 9;
-            this.LbEstado1.Text = "label1";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(49, 235);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "label2";
             // 
-            // LbEstado5
+            // pictureBox1
             // 
-            this.LbEstado5.AutoSize = true;
-            this.LbEstado5.Location = new System.Drawing.Point(205, 299);
-            this.LbEstado5.Name = "LbEstado5";
-            this.LbEstado5.Size = new System.Drawing.Size(35, 13);
-            this.LbEstado5.TabIndex = 10;
-            this.LbEstado5.Text = "label1";
+            this.pictureBox1.Location = new System.Drawing.Point(43, 127);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(144, 98);
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
             // 
-            // LbEstado4
+            // label1
             // 
-            this.LbEstado4.AutoSize = true;
-            this.LbEstado4.Location = new System.Drawing.Point(630, 171);
-            this.LbEstado4.Name = "LbEstado4";
-            this.LbEstado4.Size = new System.Drawing.Size(35, 13);
-            this.LbEstado4.TabIndex = 11;
-            this.LbEstado4.Text = "label1";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(72, 104);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 20);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "label1";
             // 
-            // LbEstado3
+            // label3
             // 
-            this.LbEstado3.AutoSize = true;
-            this.LbEstado3.Location = new System.Drawing.Point(462, 171);
-            this.LbEstado3.Name = "LbEstado3";
-            this.LbEstado3.Size = new System.Drawing.Size(35, 13);
-            this.LbEstado3.TabIndex = 12;
-            this.LbEstado3.Text = "label1";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(757, 439);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "label3";
             // 
-            // LbEstado2
+            // pictureBox5
             // 
-            this.LbEstado2.AutoSize = true;
-            this.LbEstado2.Location = new System.Drawing.Point(344, 171);
-            this.LbEstado2.Name = "LbEstado2";
-            this.LbEstado2.Size = new System.Drawing.Size(35, 13);
-            this.LbEstado2.TabIndex = 13;
-            this.LbEstado2.Text = "label1";
+            this.pictureBox5.Location = new System.Drawing.Point(750, 316);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(144, 98);
+            this.pictureBox5.TabIndex = 43;
+            this.pictureBox5.TabStop = false;
             // 
-            // LbEstado7
+            // label4
             // 
-            this.LbEstado7.AutoSize = true;
-            this.LbEstado7.Location = new System.Drawing.Point(462, 299);
-            this.LbEstado7.Name = "LbEstado7";
-            this.LbEstado7.Size = new System.Drawing.Size(35, 13);
-            this.LbEstado7.TabIndex = 14;
-            this.LbEstado7.Text = "label5";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(779, 293);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 20);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "label4";
             // 
-            // LbEstado6
+            // label11
             // 
-            this.LbEstado6.AutoSize = true;
-            this.LbEstado6.Location = new System.Drawing.Point(357, 299);
-            this.LbEstado6.Name = "LbEstado6";
-            this.LbEstado6.Size = new System.Drawing.Size(35, 13);
-            this.LbEstado6.TabIndex = 15;
-            this.LbEstado6.Text = "label6";
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(526, 439);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(41, 13);
+            this.label11.TabIndex = 41;
+            this.label11.Text = "label11";
             // 
-            // LbEstado8
+            // pictureBox6
             // 
-            this.LbEstado8.AutoSize = true;
-            this.LbEstado8.Location = new System.Drawing.Point(639, 290);
-            this.LbEstado8.Name = "LbEstado8";
-            this.LbEstado8.Size = new System.Drawing.Size(35, 13);
-            this.LbEstado8.TabIndex = 16;
-            this.LbEstado8.Text = "label7";
+            this.pictureBox6.Location = new System.Drawing.Point(519, 316);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(144, 98);
+            this.pictureBox6.TabIndex = 40;
+            this.pictureBox6.TabStop = false;
             // 
-            // Menuplatos
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(548, 293);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(67, 20);
+            this.label12.TabIndex = 39;
+            this.label12.Text = "label12";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(299, 439);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(41, 13);
+            this.label13.TabIndex = 38;
+            this.label13.Text = "label13";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(292, 316);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(144, 98);
+            this.pictureBox7.TabIndex = 37;
+            this.pictureBox7.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(321, 293);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(67, 20);
+            this.label14.TabIndex = 36;
+            this.label14.Text = "label14";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(50, 439);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(41, 13);
+            this.label15.TabIndex = 35;
+            this.label15.Text = "label15";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Location = new System.Drawing.Point(43, 316);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(144, 98);
+            this.pictureBox8.TabIndex = 34;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(72, 293);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(67, 20);
+            this.label16.TabIndex = 33;
+            this.label16.Text = "label16";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.OrangeRed;
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(959, 58);
+            this.panel1.TabIndex = 45;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(0, 0);
+            this.label17.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(198, 29);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "Sabor Auténtico";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(934, 0);
+            this.label18.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(25, 29);
+            this.label18.TabIndex = 10;
+            this.label18.Text = "x";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // MenuMesas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 482);
-            this.Controls.Add(this.LbEstado8);
-            this.Controls.Add(this.LbEstado6);
-            this.Controls.Add(this.LbEstado7);
-            this.Controls.Add(this.LbEstado2);
-            this.Controls.Add(this.LbEstado3);
-            this.Controls.Add(this.LbEstado4);
-            this.Controls.Add(this.LbEstado5);
-            this.Controls.Add(this.LbEstado1);
-            this.Controls.Add(this.LbMesa6);
-            this.Controls.Add(this.LbMesa8);
-            this.Controls.Add(this.LbMesa7);
-            this.Controls.Add(this.LbMesa4);
-            this.Controls.Add(this.LbMesa5);
-            this.Controls.Add(this.LbMesa3);
-            this.Controls.Add(this.LbMesa2);
-            this.Controls.Add(this.LbMesa1);
-            this.Controls.Add(this.button1);
-            this.Name = "Menuplatos";
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "MenuMesas";
             this.Text = "Menuplatos";
             this.Load += new System.EventHandler(this.Menuplatos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,22 +372,32 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label LbMesa1;
-        private System.Windows.Forms.Label LbMesa2;
-        private System.Windows.Forms.Label LbMesa3;
-        private System.Windows.Forms.Label LbMesa5;
-        private System.Windows.Forms.Label LbMesa4;
-        private System.Windows.Forms.Label LbMesa7;
-        private System.Windows.Forms.Label LbMesa8;
-        private System.Windows.Forms.Label LbMesa6;
-        private System.Windows.Forms.Label LbEstado1;
-        private System.Windows.Forms.Label LbEstado5;
-        private System.Windows.Forms.Label LbEstado4;
-        private System.Windows.Forms.Label LbEstado3;
-        private System.Windows.Forms.Label LbEstado2;
-        private System.Windows.Forms.Label LbEstado7;
-        private System.Windows.Forms.Label LbEstado6;
-        private System.Windows.Forms.Label LbEstado8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
     }
 }

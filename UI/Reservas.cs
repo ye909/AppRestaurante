@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,7 +24,9 @@ namespace UI
 
         private void label3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+           MenuPrincipal menuprincipal = new MenuPrincipal();
+            menuprincipal.Show();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -41,55 +44,58 @@ namespace UI
   
             
             // falta la validacion de los campos 
-            if ( string.IsNullOrEmpty(txtNombreUser.Text) && string.IsNullOrEmpty( txtCantidaPersonas.Text))
+            if ( string.IsNullOrEmpty(txtNombreUser.Text) || string.IsNullOrEmpty( txtTelefono.Text) || cbParqueadero.SelectedIndex == 0)
             {
+               
                 MessageBox.Show("Los campos no pueden estar vacidos"); 
                 return;
             }
-            else
-            {
-                
-               
 
-                // envio el nombre de la persona de la reserva
-                MensajeReservas mensaje = new MensajeReservas(txtNombreUser.Text);
+       
+
+            // envio el nombre de la persona de la reserva
+            MensajeReservas mensaje = new MensajeReservas("  "+ txtNombreUser.Text);
                 mensaje.ShowDialog();
 
-                this.Close();
-            }
+
+            this.Hide();
+            MenuPrincipal menuprincipal = new MenuPrincipal();
+            menuprincipal.Show();
+
+
 
             //int cantidad;
             //if (int.TryParse(txtCantidaPersonas.Text, out cantidad))
             //{
             //    MessageBox.Show("Los");
             //}
-         
-            Entidades.Rerservas vaidarReservas= new Entidades.Rerservas();
-            vaidarReservas.Nombre = txtNombreUser.Text;
-            vaidarReservas.Telefono = txtTelefono.Text;
-            vaidarReservas.Descripcion = txtDescripcion.Text;
-            vaidarReservas.Parqueadero = cbParqueadero.Text;
-            vaidarReservas.Pago = txtPago.Text;
-            vaidarReservas.Fecha = dtFecha.Value;
-           // vaidarReservas.Cantidad = Convert.ToInt32(txtCantidaPersonas.Text);
+
+            //Entidades.Rerservas vaidarReservas= new Entidades.Rerservas();
+            //vaidarReservas.Nombre = txtNombreUser.Text;
+            //vaidarReservas.Telefono = txtTelefono.Text;
+            //vaidarReservas.Descripcion = txtDescripcion.Text;
+            //vaidarReservas.Parqueadero = cbParqueadero.Text;
+            //vaidarReservas.Pago = txtPago.Text;
+            //vaidarReservas.Fecha = dtFecha.Value;
+            // vaidarReservas.Cantidad = Convert.ToInt32(txtCantidaPersonas.Text);
 
 
-            Negocio.ReservasUser datosReservas = new Negocio.ReservasUser();
+            //Negocio.ReservasUser datosReservas = new Negocio.ReservasUser();
 
 
 
 
-            bool resul = datosReservas.insertReserva(vaidarReservas);
+            //bool resul = datosReservas.insertReserva(vaidarReservas);
 
 
-            if (resul)
-            {
-                MessageBox.Show("ok");
-            }
-            else
-            {
-                MessageBox.Show("no");
-            }
+            //if (resul)
+            //{
+            //    MessageBox.Show("ok");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("no");
+            //}
         }
 
         private void opcionParqueadero()
@@ -100,6 +106,7 @@ namespace UI
             cbParqueadero.Items.Add("Carro");
             cbParqueadero.Items.Add("Moto");
             cbParqueadero.Items.Add("Cicla");
+            cbParqueadero.Items.Add("Sin_Parqueadero");
             cbParqueadero.SelectedIndex = 0;
         }
 

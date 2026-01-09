@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -10,8 +11,7 @@ namespace ConexionDAL
 {
    public class BDParqueadero
     {
-        private string linkconexion ="" ;
-
+        private string linkconexion = ConfigurationManager.ConnectionStrings["sqlconex"].ConnectionString;
         public DataTable verReservasPaqueadero()
         {
             using (SqlConnection con = new SqlConnection(linkconexion))
@@ -39,7 +39,8 @@ namespace ConexionDAL
                 cmd.Parameters.AddWithValue("@", items.Modelo);
                 cmd.Parameters.AddWithValue("@", items.Color);
                 cmd.Parameters.AddWithValue("@", items.Descripcion);
-
+                
+            
                 int resul = cmd.ExecuteNonQuery();
                 return resul > 0;
           

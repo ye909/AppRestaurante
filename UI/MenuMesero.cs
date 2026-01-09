@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace UI
 {
-    public partial class MenuPlatosEcuador : Form
+    public partial class MenuMesero : Form
     {
-        public MenuPlatosEcuador()
+        public MenuMesero()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MenuPlatosEcuador_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

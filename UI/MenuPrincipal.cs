@@ -19,13 +19,14 @@ namespace UI
 
         private void btnReservas_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Reservas reservas = new Reservas();
             reservas.Show();
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void MenuPrincipal_Load(object sender, EventArgs e)
@@ -75,6 +76,13 @@ namespace UI
             Contacto contacto = new Contacto();
             contacto.Show();
             this.Hide();
+        }
+
+        private void btnParqueadero_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuParqueadero parqueadero = new MenuParqueadero();
+            parqueadero.Show();
         }
     }
 }

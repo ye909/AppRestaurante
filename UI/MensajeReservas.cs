@@ -26,18 +26,18 @@ namespace UI
             ocultarventana();
 
 
-        }        
+        }
 
         private async Task ocultarventana()
         {
-            await Task.Delay(3000);
+            await Task.Delay(4000);
 
-          
+
             this.Hide();
-       
+
         }
-  
-    
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -47,6 +47,11 @@ namespace UI
         private void label3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void lbnombre_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
